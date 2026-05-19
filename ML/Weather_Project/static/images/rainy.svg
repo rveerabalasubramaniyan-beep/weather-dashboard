@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="rainSky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2b4769"/>
+      <stop offset="100%" stop-color="#0f2030"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#rainSky)"/>
+  <g fill="#c4d6e8" opacity="0.92">
+    <ellipse cx="450" cy="270" rx="190" ry="80"/>
+    <ellipse cx="650" cy="240" rx="210" ry="94"/>
+    <ellipse cx="870" cy="280" rx="220" ry="88"/>
+  </g>
+  <g stroke="#7fcaff" stroke-width="9" stroke-linecap="round" opacity="0.82">
+    <line x1="420" y1="380" x2="380" y2="520"/>
+    <line x1="540" y1="390" x2="500" y2="530"/>
+    <line x1="660" y1="400" x2="620" y2="540"/>
+    <line x1="780" y1="390" x2="740" y2="530"/>
+    <line x1="900" y1="380" x2="860" y2="520"/>
+    <line x1="1020" y1="390" x2="980" y2="530"/>
+  </g>
+  <path d="M0 720C180 660 360 690 520 740S860 820 1070 760 1390 700 1600 760V900H0Z" fill="#19354d"/>
+</svg>
