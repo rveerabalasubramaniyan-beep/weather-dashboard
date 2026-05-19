@@ -1,0 +1,11 @@
+Watching for file changes with StatReloader
+[19/May/2026 00:21:49] "GET / HTTP/1.1" 200 15791
+[19/May/2026 00:21:49,349] - Broken pipe from ('127.0.0.1', 51358)
+[19/May/2026 00:22:47] "GET / HTTP/1.1" 200 15791
+[19/May/2026 00:22:47] "GET /static/css/style.css HTTP/1.1" 200 9058
+[19/May/2026 00:22:47] "GET /static/js/app.js HTTP/1.1" 200 3740
+[19/May/2026 00:22:47] "GET /static/images/sunny.svg HTTP/1.1" 200 737
+Not Found: /favicon.ico
+[19/May/2026 00:22:47] "GET /favicon.ico HTTP/1.1" 404 2718
+[19/May/2026 00:22:59] "POST /predict/ HTTP/1.1" 200 329
+[19/May/2026 00:22:59] "GET /static/images/cloudy.svg HTTP/1.1" 200 832
