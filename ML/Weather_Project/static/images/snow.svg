@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="snowSky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#b8dcff"/>
+      <stop offset="100%" stop-color="#eef8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#snowSky)"/>
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="220" cy="240" r="7"/>
+    <circle cx="380" cy="330" r="9"/>
+    <circle cx="560" cy="230" r="8"/>
+    <circle cx="760" cy="360" r="10"/>
+    <circle cx="940" cy="260" r="8"/>
+    <circle cx="1120" cy="340" r="9"/>
+    <circle cx="1320" cy="250" r="7"/>
+    <circle cx="1450" cy="360" r="10"/>
+  </g>
+  <g fill="#f7fbff" opacity="0.86">
+    <ellipse cx="460" cy="270" rx="210" ry="76"/>
+    <ellipse cx="760" cy="240" rx="250" ry="88"/>
+    <ellipse cx="1100" cy="280" rx="220" ry="82"/>
+  </g>
+  <path d="M0 760C180 720 350 720 520 780S900 860 1120 794 1420 740 1600 790V900H0Z" fill="#d8ebf9"/>
+</svg>

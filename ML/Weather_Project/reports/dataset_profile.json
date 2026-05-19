@@ -1,0 +1,217 @@
+{
+  "dataset_shape": {
+    "rows": 366,
+    "columns": 8
+  },
+  "target_column": "RainTomorrow",
+  "missing_values": {
+    "MinTemp": 0,
+    "MaxTemp": 0,
+    "WindGustDir": 3,
+    "WindGustSpeed": 2,
+    "Humidity": 0,
+    "Pressure": 0,
+    "Temp": 0,
+    "RainTomorrow": 0
+  },
+  "data_types": {
+    "MinTemp": "float64",
+    "MaxTemp": "float64",
+    "WindGustDir": "str",
+    "WindGustSpeed": "float64",
+    "Humidity": "int64",
+    "Pressure": "float64",
+    "Temp": "float64",
+    "RainTomorrow": "str"
+  },
+  "summary_statistics": {
+    "MinTemp": {
+      "count": 366.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 7.265573770491804,
+      "std": 6.025799834253392,
+      "min": -5.3,
+      "25%": 2.3,
+      "50%": 7.45,
+      "75%": 12.5,
+      "max": 20.9
+    },
+    "MaxTemp": {
+      "count": 366.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 20.550273224043714,
+      "std": 6.690515669598577,
+      "min": 7.6,
+      "25%": 15.025,
+      "50%": 19.65,
+      "75%": 25.5,
+      "max": 35.8
+    },
+    "WindGustDir": {
+      "count": 363,
+      "unique": 16,
+      "top": "NW",
+      "freq": 73,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    "WindGustSpeed": {
+      "count": 364.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 39.84065934065934,
+      "std": 13.059807144421073,
+      "min": 13.0,
+      "25%": 31.0,
+      "50%": 39.0,
+      "75%": 46.0,
+      "max": 98.0
+    },
+    "Humidity": {
+      "count": 366.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 44.51912568306011,
+      "std": 16.850947383652535,
+      "min": 13.0,
+      "25%": 32.25,
+      "50%": 43.0,
+      "75%": 55.0,
+      "max": 96.0
+    },
+    "Pressure": {
+      "count": 366.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 1016.8103825136611,
+      "std": 6.469422397297334,
+      "min": 996.8,
+      "25%": 1012.8,
+      "50%": 1017.4,
+      "75%": 1021.475,
+      "max": 1033.2
+    },
+    "Temp": {
+      "count": 366.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 19.23087431693989,
+      "std": 6.640345988720311,
+      "min": 5.1,
+      "25%": 14.15,
+      "50%": 18.55,
+      "75%": 24.0,
+      "max": 34.5
+    },
+    "RainTomorrow": {
+      "count": 366,
+      "unique": 2,
+      "top": "No",
+      "freq": 300,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    }
+  },
+  "correlations": {
+    "MinTemp": {
+      "MinTemp": 1.0,
+      "MaxTemp": 0.752,
+      "WindGustSpeed": 0.218,
+      "Humidity": -0.041,
+      "Pressure": -0.498,
+      "Temp": 0.723
+    },
+    "MaxTemp": {
+      "MinTemp": 0.752,
+      "MaxTemp": 1.0,
+      "WindGustSpeed": 0.11,
+      "Humidity": -0.533,
+      "Pressure": -0.379,
+      "Temp": 0.989
+    },
+    "WindGustSpeed": {
+      "MinTemp": 0.218,
+      "MaxTemp": 0.11,
+      "WindGustSpeed": 1.0,
+      "Humidity": -0.069,
+      "Pressure": -0.527,
+      "Temp": 0.073
+    },
+    "Humidity": {
+      "MinTemp": -0.041,
+      "MaxTemp": -0.533,
+      "WindGustSpeed": -0.069,
+      "Humidity": 1.0,
+      "Pressure": -0.01,
+      "Temp": -0.582
+    },
+    "Pressure": {
+      "MinTemp": -0.498,
+      "MaxTemp": -0.379,
+      "WindGustSpeed": -0.527,
+      "Humidity": -0.01,
+      "Pressure": 1.0,
+      "Temp": -0.345
+    },
+    "Temp": {
+      "MinTemp": 0.723,
+      "MaxTemp": 0.989,
+      "WindGustSpeed": 0.073,
+      "Humidity": -0.582,
+      "Pressure": -0.345,
+      "Temp": 1.0
+    }
+  },
+  "model_results": [
+    {
+      "model": "XGBoost",
+      "accuracy": 0.8243,
+      "precision": 0.5,
+      "recall": 0.5385,
+      "f1": 0.5185,
+      "roc_auc": 0.773
+    },
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.7162,
+      "precision": 0.3667,
+      "recall": 0.8462,
+      "f1": 0.5116,
+      "roc_auc": 0.9016
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.8514,
+      "precision": 0.625,
+      "recall": 0.3846,
+      "f1": 0.4762,
+      "roc_auc": 0.809
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.6486,
+      "precision": 0.2593,
+      "recall": 0.5385,
+      "f1": 0.35,
+      "roc_auc": 0.6393
+    }
+  ]
+}
